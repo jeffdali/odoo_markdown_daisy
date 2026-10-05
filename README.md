@@ -86,10 +86,10 @@ Render concise previews directly inside Kanban cards with full modal preview sup
 1. Clone the repository into your custom addons directory:
    ```bash
    # For Odoo 19
-   git clone -b 19.0 <your-new-repo-url> odoo_markdown_daisy
+   git clone -b 19.0 https://github.com/jeffdali/odoo_markdown_daisy.git odoo_markdown_daisy
 
    # For Odoo 18
-   git clone -b 18.0 <your-new-repo-url> odoo_markdown_daisy
+   git clone -b 18.0 https://github.com/jeffdali/odoo_markdown_daisy.git odoo_markdown_daisy
    ```
 
 2. Add the path to your Odoo configuration file (`odoo.conf`):
@@ -106,9 +106,9 @@ Render concise previews directly inside Kanban cards with full modal preview sup
 
 ## 🚀 Usage Guide
 
-### 1. Adding to Form Views (`widget="markdown"`)
+### 1. Adding to Form Views (`widget="daisy_markdown"`)
 
-Apply `widget="markdown"` to any `fields.Text` or `fields.Html` field in your XML views. In edit mode, it renders the EasyMDE editor; in read-only mode, it renders formatted HTML:
+Apply `widget="daisy_markdown"` (or `widget="markdown"`) to any `fields.Text` or `fields.Html` field in your XML views. In edit mode, it renders the EasyMDE editor; in read-only mode, it renders formatted HTML:
 
 ```xml
 <record id="view_task_form_markdown" model="ir.ui.view">
@@ -117,21 +117,21 @@ Apply `widget="markdown"` to any `fields.Text` or `fields.Html` field in your XM
     <field name="inherit_id" ref="project.view_task_form2"/>
     <field name="arch" type="xml">
         <xpath expr="//field[@name='description']" position="attributes">
-            <attribute name="widget">markdown</attribute>
+            <attribute name="widget">daisy_markdown</attribute>
             <attribute name="placeholder">Write markdown content here...</attribute>
         </xpath>
     </field>
 </record>
 ```
 
-### 2. Adding to List Views (`widget="markdown_preview"`)
+### 2. Adding to List Views (`widget="daisy_markdown_preview"`)
 
-In list/tree views, use `widget="markdown_preview"` to render a clean, single-line preview with an interactive modal popup button:
+In list/tree views, use `widget="daisy_markdown_preview"` (or `widget="markdown_preview"`) to render a clean, single-line preview with an interactive modal popup button:
 
 ```xml
 <list string="Tasks">
     <field name="name"/>
-    <field name="description" widget="markdown_preview"/>
+    <field name="description" widget="daisy_markdown_preview"/>
 </list>
 ```
 
@@ -197,7 +197,7 @@ class ProductTemplate(models.Model):
 
 ## 🧪 Built-in Test Suite
 
-A built-in demo model is included under **Settings > Technical > Markdown > Markdown Test**:
+A built-in demo model is included under **Settings > Technical > Daisy Markdown > Daisy Markdown Test**:
 - Create test records with complex Markdown syntax (tables, code snippets, lists, quotes).
 - Test form edit mode, live preview, side-by-side mode, and fullscreen editing.
 - Test list view and kanban card previews with the preview modal dialog.
@@ -214,5 +214,5 @@ This project is licensed under the **GNU Lesser General Public License v3.0 (LGP
 
 - **Author**: Jaafar Ali
 - **Email**: [jaafar.ali.in@gmail.com](mailto:jaafar.ali.in@gmail.com)
-- **Repository**: [https://github.com/jeffdali/Web-widget-markdown](https://github.com/jeffdali/Web-widget-markdown)
+- **Repository**: [https://github.com/jeffdali/odoo_markdown_daisy](https://github.com/jeffdali/odoo_markdown_daisy)
 - **Issues & Contributions**: Bug reports, feature suggestions, and pull requests are warmly welcome!
