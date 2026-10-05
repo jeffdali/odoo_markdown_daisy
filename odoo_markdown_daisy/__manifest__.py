@@ -27,7 +27,7 @@ Features:
     """,
     # Using semantic version "1.0.0" allows Odoo 18 to adapt to "18.0.1.0.0"
     # and Odoo 19 to adapt to "19.0.1.0.0" automatically.
-    "version": "19.0.1.0.0",
+    "version": "18.0.1.0.0",
     "category": "Technical",
     "author": "Jaafar Ali",
     "website": "https://github.com/jeffdali/odoo_markdown_daisy",
