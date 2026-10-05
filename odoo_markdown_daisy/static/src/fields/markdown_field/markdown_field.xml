@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Part of Odoo. See LICENSE file for full copyright and licensing details. -->
 <templates xml:space="preserve">
-    <t t-name="web_widget_markdown.MarkdownField" owl="1">
+    <t t-name="odoo_markdown_daisy.MarkdownField" owl="1">
         <div class="o_markdown_field_container w-100">
             <MarkdownEditor
                 value="state.initialValue"

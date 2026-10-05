@@ -6,7 +6,7 @@ import { Dialog } from "@web/core/dialog/dialog";
 import { MarkdownViewer } from "../markdown_viewer/markdown_viewer";
 
 export class MarkdownPreviewDialog extends Component {
-    static template = "web_widget_markdown.MarkdownPreviewDialog";
+    static template = "odoo_markdown_daisy.MarkdownPreviewDialog";
     static components = {
         Dialog,
         MarkdownViewer,

@@ -5,7 +5,7 @@ import { Component, useRef, onMounted, onWillUnmount, useEffect, markup } from "
 import { cleanMarkdown } from "../../utils/markdown_utils";
 
 export class MarkdownEditor extends Component {
-    static template = "web_widget_markdown.MarkdownEditor";
+    static template = "odoo_markdown_daisy.MarkdownEditor";
     static props = {
         value: { type: String, optional: true },
         readonly: { type: Boolean, optional: true },

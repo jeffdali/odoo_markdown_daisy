@@ -5,7 +5,7 @@ import { Component, markup } from "@odoo/owl";
 import { cleanMarkdown } from "../../utils/markdown_utils";
 
 export class MarkdownViewer extends Component {
-    static template = "web_widget_markdown.MarkdownViewer";
+    static template = "odoo_markdown_daisy.MarkdownViewer";
     static props = {
         value: { type: String, optional: true },
         maxLength: { type: Number, optional: true },

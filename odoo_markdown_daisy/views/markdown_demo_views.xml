@@ -8,7 +8,7 @@
         <field name="arch" type="xml">
             <list string="Markdown Tests">
                 <field name="name"/>
-                <field name="content" widget="markdown_preview"/>
+                <field name="content" widget="daisy_markdown_preview"/>
             </list>
         </field>
     </record>
@@ -28,7 +28,7 @@
                                 <strong class="fs-5 text-primary"><field name="name"/></strong>
                             </div>
                             <div class="text-muted small">
-                                <field name="content" widget="markdown_preview"/>
+                                <field name="content" widget="daisy_markdown_preview"/>
                             </div>
                         </div>
                     </t>
@@ -52,7 +52,7 @@
                     </div>
                     <notebook>
                         <page string="Markdown Editor" name="markdown_page">
-                            <field name="content" widget="markdown" nolabel="1" placeholder="Write markdown content here..."/>
+                            <field name="content" widget="daisy_markdown" nolabel="1" placeholder="Write markdown content here..."/>
                         </page>
                     </notebook>
                 </sheet>
@@ -62,7 +62,7 @@
 
     <!-- Window Action -->
     <record id="action_web_markdown_test" model="ir.actions.act_window">
-        <field name="name">Markdown Test</field>
+        <field name="name">Daisy Markdown Test</field>
         <field name="res_model">web.markdown.test</field>
         <field name="view_mode">list,kanban,form</field>
         <field name="help" type="html">
@@ -75,14 +75,14 @@
         </field>
     </record>
 
-    <!-- Menus: Settings > Technical > Markdown > Markdown Test -->
+    <!-- Menus: Settings > Technical > Daisy Markdown > Daisy Markdown Test -->
     <menuitem id="menu_markdown_technical_root"
-              name="Markdown"
+              name="Daisy Markdown"
               parent="base.menu_custom"
               sequence="90"/>
 
     <menuitem id="menu_markdown_technical_test"
-              name="Markdown Test"
+              name="Daisy Markdown Test"
               parent="menu_markdown_technical_root"
               action="action_web_markdown_test"
               sequence="10"/>

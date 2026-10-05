@@ -1,18 +1,18 @@
 <p align="center">
-  <img src="web_widget_markdown/static/description/banner.png" alt="Markdown Field Widget for Odoo" width="100%" />
+  <img src="odoo_markdown_daisy/static/description/banner.png" alt="Odoo Markdown Daisy" width="100%" />
 </p>
 
 <p align="center">
-  <a href="https://github.com/jeffdali/Web-widget-markdown/blob/19.0/LICENSE"><img src="https://img.shields.io/badge/license-LGPL--3-blue.svg" alt="License: LGPL-3" /></a>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/license-LGPL--3-blue.svg" alt="License: LGPL-3" /></a>
   <img src="https://img.shields.io/badge/odoo-18.0%20%7C%2019.0-714B67.svg" alt="Odoo 18 and 19 Ready" />
   <img src="https://img.shields.io/badge/edition-Community%20%7C%20Enterprise-0284c7.svg" alt="Community & Enterprise" />
   <img src="https://img.shields.io/badge/dependencies-Zero%20CDN%20%7C%20100%25%20Offline-10b981.svg" alt="100% Offline / Zero CDN" />
   <img src="https://img.shields.io/badge/framework-OWL%202-purple.svg" alt="OWL 2" />
 </p>
 
-# Web Markdown Widget (`web_widget_markdown`)
+# Odoo Markdown Daisy (`odoo_markdown_daisy`)
 
-A modern, production-grade Markdown editing and viewing suite built with **OWL 2**, **EasyMDE**, and **marked.js** for **Odoo 18** and **Odoo 19** (Community and Enterprise).
+A modern, production-grade Markdown editing and viewing suite built with **OWL 2**, **EasyMDE**, and **marked.js** for **Odoo 18** and **Odoo 19** (Community and Enterprise). Part of the **Daisy** ecosystem.
 
 ---
 
@@ -39,42 +39,42 @@ A modern, production-grade Markdown editing and viewing suite built with **OWL 2
 The interactive EasyMDE toolbar features bold, italics, headings, quotes, numbered/bulleted lists, links, images, tables, and code blocks. The toolbar remains pinned at the top on scroll:
 
 <p align="center">
-  <img src="web_widget_markdown/static/description/editor_view.png" alt="Form View Markdown Editor" width="100%" style="border-radius: 8px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);" />
+  <img src="odoo_markdown_daisy/static/description/editor_view.png" alt="Form View Markdown Editor" width="100%" style="border-radius: 8px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);" />
 </p>
 
 ### 2. High-Contrast Rendered Typography & Tables
 Rich typography, clean markdown tables, and syntax-highlighted dark code blocks:
 
 <p align="center">
-  <img src="web_widget_markdown/static/description/preview_mode.png" alt="Rendered Markdown Preview Mode" width="100%" style="border-radius: 8px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);" />
+  <img src="odoo_markdown_daisy/static/description/preview_mode.png" alt="Rendered Markdown Preview Mode" width="100%" style="border-radius: 8px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);" />
 </p>
 
 ### 3. Real-Time Side-by-Side Split Screen Mode
 Simultaneous live editing on the left and instantaneous rendered preview on the right (toggle with the toolbar button or `F9`):
 
 <p align="center">
-  <img src="web_widget_markdown/static/description/split_screen.png" alt="Side-by-Side Live Preview" width="100%" style="border-radius: 8px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);" />
+  <img src="odoo_markdown_daisy/static/description/split_screen.png" alt="Side-by-Side Live Preview" width="100%" style="border-radius: 8px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);" />
 </p>
 
 ### 4. List View Snippet & Preview Trigger
-In list/tree views, `widget="markdown_preview"` renders a clean, single-line truncated preview alongside a dedicated **Preview** button:
+In list/tree views, `widget="daisy_markdown_preview"` renders a clean, single-line truncated preview alongside a dedicated **Preview** button:
 
 <p align="center">
-  <img src="web_widget_markdown/static/description/list_view.png" alt="List View Preview Snippet" width="100%" style="border-radius: 8px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);" />
+  <img src="odoo_markdown_daisy/static/description/list_view.png" alt="List View Preview Snippet" width="100%" style="border-radius: 8px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);" />
 </p>
 
 ### 5. Interactive Modal Dialog Popup
 Clicking the **Preview** button in List or Kanban view opens the full formatted document in a responsive modal dialog without leaving the current view:
 
 <p align="center">
-  <img src="web_widget_markdown/static/description/modal_preview.png" alt="Interactive Modal Dialog Preview" width="100%" style="border-radius: 8px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);" />
+  <img src="odoo_markdown_daisy/static/description/modal_preview.png" alt="Interactive Modal Dialog Preview" width="100%" style="border-radius: 8px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);" />
 </p>
 
 ### 6. Kanban Card Integration
 Render concise previews directly inside Kanban cards with full modal preview support:
 
 <p align="center">
-  <img src="web_widget_markdown/static/description/kanban_view.png" alt="Kanban Card Markdown Preview" width="100%" style="border-radius: 8px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);" />
+  <img src="odoo_markdown_daisy/static/description/kanban_view.png" alt="Kanban Card Markdown Preview" width="100%" style="border-radius: 8px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);" />
 </p>
 
 ---
@@ -86,10 +86,10 @@ Render concise previews directly inside Kanban cards with full modal preview sup
 1. Clone the repository into your custom addons directory:
    ```bash
    # For Odoo 19
-   git clone -b 19.0 https://github.com/jeffdali/Web-widget-markdown.git web_widget_markdown
+   git clone -b 19.0 <your-new-repo-url> odoo_markdown_daisy
 
    # For Odoo 18
-   git clone -b 18.0 https://github.com/jeffdali/Web-widget-markdown.git web_widget_markdown
+   git clone -b 18.0 <your-new-repo-url> odoo_markdown_daisy
    ```
 
 2. Add the path to your Odoo configuration file (`odoo.conf`):
@@ -100,7 +100,7 @@ Render concise previews directly inside Kanban cards with full modal preview sup
 3. Restart your Odoo server and update the apps list:
    - Activate **Developer Mode** (`Settings > General Settings > Developer Tools`).
    - Navigate to **Apps > Update Apps List**.
-   - Search for `web_widget_markdown` (or `Markdown Field Widget`) and click **Activate**.
+   - Search for `odoo_markdown_daisy` (or `Odoo Markdown Daisy`) and click **Activate**.
 
 ---
 

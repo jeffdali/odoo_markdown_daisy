@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Part of Odoo. See LICENSE file for full copyright and licensing details. -->
 <templates xml:space="preserve">
-    <t t-name="web_widget_markdown.MarkdownPreviewField" owl="1">
+    <t t-name="odoo_markdown_daisy.MarkdownPreviewField" owl="1">
         <div class="o_field_markdown_preview_container d-flex align-items-center justify-content-between gap-2 w-100" t-att-title="plainSnippet">
             <div class="o_field_markdown_preview_wrapper text-truncate flex-grow-1" t-out="renderedPreview"/>
             <button t-if="hasContent"

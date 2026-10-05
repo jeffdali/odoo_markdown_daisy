@@ -10,7 +10,7 @@ import { formatText } from "@web/views/fields/formatters";
 import { MarkdownEditor } from "../../components/markdown_editor/markdown_editor";
 
 export class MarkdownField extends Component {
-    static template = "web_widget_markdown.MarkdownField";
+    static template = "odoo_markdown_daisy.MarkdownField";
     static components = {
         MarkdownEditor,
     };
@@ -64,4 +64,6 @@ export const markdownField = {
 };
 
 registry.category("fields").add("markdown", markdownField);
+registry.category("fields").add("daisy_markdown", markdownField);
+registry.category("fields").add("odoo_markdown_daisy", markdownField);
 

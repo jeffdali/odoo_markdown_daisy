@@ -2,12 +2,12 @@
     <!-- Hero Banner -->
     <div class="row justify-content-center text-center py-4">
         <div class="col-12 col-lg-10">
-            <img src="banner.png" alt="Markdown Field Widget Banner" class="img-fluid rounded-3 shadow-sm mb-4" style="max-width: 100%; border: 1px solid #e2e8f0;"/>
+            <img src="banner.png" alt="Odoo Markdown Daisy Banner" class="img-fluid rounded-3 shadow-sm mb-4" style="max-width: 100%; border: 1px solid #e2e8f0;"/>
         </div>
         <div class="col-12 col-lg-9 mt-2">
-            <h1 class="display-5 fw-bold" style="color: #714B67;">Markdown Field Widget</h1>
+            <h1 class="display-5 fw-bold" style="color: #714B67;">Odoo Markdown Daisy</h1>
             <p class="lead text-muted">
-                A modern, production-grade Markdown editor and preview viewer built with OWL 2 for Odoo 18 and 19.
+                A modern, production-grade Markdown editor and preview viewer built with OWL 2 for Odoo 18 and 19. Part of the Daisy ecosystem.
             </p>
             <div class="d-flex flex-wrap justify-content-center gap-2 mt-3">
                 <span class="badge rounded-pill px-3 py-2" style="background-color: #714B67; font-size: 0.9rem;">Odoo 18 &amp; 19 Ready</span>
@@ -181,16 +181,16 @@
 
                 <h6 class="text-info mt-3">1. Form View (Full Editor &amp; Read-Only Formatted Viewer):</h6>
                 <pre class="p-3 rounded-2" style="background-color: #1e293b; color: #38bdf8; font-family: monospace; font-size: 0.85rem; overflow-x: auto;">
-&lt;!-- Form View: Add widget="markdown" to any Text or Html field --&gt;
-&lt;field name="description" widget="markdown" placeholder="Type markdown here..."/&gt;</pre>
+&lt;!-- Form View: Add widget="daisy_markdown" (or "markdown") to any Text or Html field --&gt;
+&lt;field name="description" widget="daisy_markdown" placeholder="Type markdown here..."/&gt;</pre>
 
                 <h6 class="text-info mt-3">2. List &amp; Kanban Views (Preview with Modal Popup):</h6>
                 <pre class="p-3 rounded-2" style="background-color: #1e293b; color: #38bdf8; font-family: monospace; font-size: 0.85rem; overflow-x: auto;">
 &lt;!-- List/Tree View --&gt;
-&lt;field name="description" widget="markdown_preview"/&gt;
+&lt;field name="description" widget="daisy_markdown_preview"/&gt;
 
 &lt;!-- Kanban View Card --&gt;
-&lt;field name="description" widget="markdown_preview"/&gt;</pre>
+&lt;field name="description" widget="daisy_markdown_preview"/&gt;</pre>
 
                 <h6 class="text-info mt-3">3. Python Model Integration:</h6>
                 <pre class="p-3 rounded-2" style="background-color: #1e293b; color: #38bdf8; font-family: monospace; font-size: 0.85rem; overflow-x: auto;">

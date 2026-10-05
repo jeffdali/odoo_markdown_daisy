@@ -1,16 +1,16 @@
 # Manual QA Checklist (`TESTING.md`)
 
-Use this checklist to verify the installation, functionality, and security of `web_widget_markdown` across Odoo 18 and Odoo 19 instances.
+Use this checklist to verify the installation, functionality, and security of `odoo_markdown_daisy` across Odoo 18 and Odoo 19 instances.
 
 ---
 
 ## 🧪 Verification Scenarios
 
 - [ ] **Clean Installation**:
-  - Module installs cleanly on a fresh Odoo 18 CE or Odoo 19 CE database (`./run.sh -d odoo_test -i web_widget_markdown --stop-after-init`) without Python tracebacks or XML validation errors.
+  - Module installs cleanly on a fresh Odoo 18 CE or Odoo 19 CE database (`./run.sh -d odoo_test -i odoo_markdown_daisy --stop-after-init`) without Python tracebacks or XML validation errors.
 
 - [ ] **Demo Model & Views**:
-  - Menu item `Settings > Technical > Markdown > Markdown Test` is accessible (with Developer Mode enabled).
+  - Menu item `Settings > Technical > Daisy Markdown > Daisy Markdown Test` is accessible (with Developer Mode enabled).
   - Clicking "New" opens the form view with the Markdown editor initialized on the `content` field.
 
 - [ ] **Widget Loads Without Console Errors**:
@@ -35,14 +35,14 @@ Use this checklist to verify the installation, functionality, and security of `w
 
 - [ ] **Preview Widget in List View**:
   - Create a record with >400 characters of Markdown text.
-  - Open the list view (`Settings > Technical > Markdown > Markdown Test`).
-  - Confirm the preview truncates at 300 characters and ends with an ellipsis (`…`).
+  - Open the list view (`Settings > Technical > Daisy Markdown > Daisy Markdown Test`).
+  - Confirm the preview truncates at 200 characters and ends with an ellipsis (`…`).
 
 - [ ] **No External Network Requests (Air-gap Compliance)**:
   - Open DevTools → Network tab.
   - Filter by domain or search for external domains (`cdn.jsdelivr.net`, `cdnjs.cloudflare.com`, etc.).
   - Refresh the page and interact with the editor.
-  - Confirm all assets (`easymde.min.js`, `easymde.min.css`, `marked.min.js`) are served directly from `/web/assets/...` or `/web_widget_markdown/...` with zero external calls.
+  - Confirm all assets (`easymde.min.js`, `easymde.min.css`, `marked.min.js`) are served directly from `/web/assets/...` or `/odoo_markdown_daisy/...` with zero external calls.
 
 - [ ] **Dark Mode Styling**:
   - Toggle dark mode (system preference or Odoo user preference).

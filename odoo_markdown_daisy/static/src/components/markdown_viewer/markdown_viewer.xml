@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Part of Odoo. See LICENSE file for full copyright and licensing details. -->
 <templates xml:space="preserve">
-    <t t-name="web_widget_markdown.MarkdownViewer" owl="1">
+    <t t-name="odoo_markdown_daisy.MarkdownViewer" owl="1">
         <div class="o_field_markdown_viewer" t-out="renderedMarkdown"/>
     </t>
 </templates>

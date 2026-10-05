@@ -9,7 +9,7 @@ import { MarkdownPreviewDialog } from "../../components/markdown_preview_dialog/
 import { cleanMarkdown } from "../../utils/markdown_utils";
 
 export class MarkdownPreviewField extends Component {
-    static template = "web_widget_markdown.MarkdownPreviewField";
+    static template = "odoo_markdown_daisy.MarkdownPreviewField";
     static props = {
         ...standardFieldProps,
     };
@@ -84,7 +84,13 @@ export const markdownPreviewField = {
 };
 
 registry.category("fields").add("markdown_preview", markdownPreviewField);
+registry.category("fields").add("daisy_markdown_preview", markdownPreviewField);
+registry.category("fields").add("odoo_markdown_daisy_preview", markdownPreviewField);
 registry.category("fields").add("list.markdown_preview", markdownPreviewField);
+registry.category("fields").add("list.daisy_markdown_preview", markdownPreviewField);
 registry.category("fields").add("kanban.markdown_preview", markdownPreviewField);
+registry.category("fields").add("kanban.daisy_markdown_preview", markdownPreviewField);
 registry.category("fields").add("list.markdown", markdownPreviewField);
+registry.category("fields").add("list.daisy_markdown", markdownPreviewField);
 registry.category("fields").add("kanban.markdown", markdownPreviewField);
+registry.category("fields").add("kanban.daisy_markdown", markdownPreviewField);

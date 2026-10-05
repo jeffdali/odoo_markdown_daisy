@@ -9,18 +9,18 @@
 #   https://cdn.jsdelivr.net/npm/easymde/dist/easymde.min.css
 
 {
-    "name": "Markdown Field Widget",
-    "summary": "Full-featured Markdown field widget and preview viewer for Odoo 18 and 19",
+    "name": "Odoo Markdown Daisy",
+    "summary": "Full-featured Markdown field widget and preview viewer for Odoo 18 and 19 (Daisy Series)",
     "description": """
-Markdown Field Widget for Odoo 18 & 19
-=======================================
+Odoo Markdown Daisy (Daisy Series)
+==================================
 Provides an OWL 2 field widget that allows editing Text/Html fields using EasyMDE,
 and rendering formatted Markdown (using marked.js) in read-only and list/kanban views.
 
 Features:
 - Full Markdown editor in form edit mode (EasyMDE).
 - Safe HTML rendering in read-only mode (marked.js + OWL markup).
-- Compact preview field widget (`markdown_preview`) with character truncation for list/kanban.
+- Compact preview field widget (`daisy_markdown_preview` / `markdown_preview`) with character truncation for list/kanban.
 - Pre-configured `web.markdown.mixin` for easy integration into custom models.
 - Zero external CDN dependencies (all assets bundled locally).
 - Full Bootstrap 5 and Dark Mode styling support.
@@ -30,7 +30,7 @@ Features:
     "version": "19.0.1.0.0",
     "category": "Technical",
     "author": "Jaafar Ali",
-    "website": "https://github.com/jeffdali/Web-widget-markdown",
+    "website": "https://github.com/jeffdali/odoo_markdown_daisy",
     "support": "jaafar.ali.in@gmail.com",
     "license": "LGPL-3",
     "images": [
@@ -46,15 +46,15 @@ Features:
     ],
     "assets": {
         "web.assets_backend": [
-            "web_widget_markdown/static/lib/easymde/easymde.min.css",
-            "web_widget_markdown/static/lib/easymde/easymde.min.js",
-            "web_widget_markdown/static/lib/marked/marked.min.js",
-            "web_widget_markdown/static/src/scss/markdown_widget.scss",
-            "web_widget_markdown/static/src/utils/**/*.js",
-            "web_widget_markdown/static/src/components/**/*.js",
-            "web_widget_markdown/static/src/components/**/*.xml",
-            "web_widget_markdown/static/src/fields/**/*.js",
-            "web_widget_markdown/static/src/fields/**/*.xml",
+            "odoo_markdown_daisy/static/lib/easymde/easymde.min.css",
+            "odoo_markdown_daisy/static/lib/easymde/easymde.min.js",
+            "odoo_markdown_daisy/static/lib/marked/marked.min.js",
+            "odoo_markdown_daisy/static/src/scss/markdown_widget.scss",
+            "odoo_markdown_daisy/static/src/utils/**/*.js",
+            "odoo_markdown_daisy/static/src/components/**/*.js",
+            "odoo_markdown_daisy/static/src/components/**/*.xml",
+            "odoo_markdown_daisy/static/src/fields/**/*.js",
+            "odoo_markdown_daisy/static/src/fields/**/*.xml",
         ],
     },
     "installable": True,
